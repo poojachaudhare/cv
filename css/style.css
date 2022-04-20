@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Parisienne&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100vw;
+  height: 90vh;
+  background: radial-gradient(circle, #f0a830, brown);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 300px;
+  height: 400px;
+  background: linear-gradient(45deg, #d95cea, #9f5be6, #d34fea);
+  overflow: hidden;
+  border-radius: 30px;
+  position: relative;
+}
+
+.imgholder {
+  height: 400px;
+  width: 400px;
+  background-image: url('/images/img.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 330px;
+  border-radius: 200px;
+  position: relative;
+  bottom: 140px;
+  right: 35px;
+  box-shadow: inset -10px 0px 1px #d75748;
+  transition: 1.5s background-size;
+}
+
+.imgholder:hover {
+  background-size: 400px;
+}
+
+.container .details_container {
+  margin-top: 5px;
+  position: absolute;
+  bottom: 4px;
+  /*  border: 2px solid green; */
+  width: 100%;
+  height: 34%;
+  box-sizing: border-box;
+  padding: 2px 6px;
+}
+
+.container .details_container .name {
+  font-family: 'Baloo Bhai 2', cursive;
+  line-height: 30px;
+  font-size: 20px;
+}
+
+.container .details_container .name2 {
+  font-size: 30px;
+  margin-bottom: 24px;
+}
+
+.container .details_container .name2::first-letter {
+  font-size: 50px;
+  color: #ffffff;
+  font-family: 'Parisienne', cursive;
+}
+
+.container .details_container button {
+  height: 30px;
+  width: 80px;
+  margin: 2px 5px;
+  border: 2px ridged #ef1717a9;
+  font-size: 15px;
+
+}
+
+.container .details_container button a {
+  text-decoration: none;
+  color: #f6f8f8;
+}
+
+.container .details_container button.Facebook {
+  background: linear-gradient(45deg, #9e58f8 50%, #cb61f4 50%);
+}
+
+.container .details_container button.LinkedIn {
+  background: linear-gradient(45deg, #ec53f3 50%, #ef2e8e 50%);
+}
+
+.container .details_container button.Instagram {
+  background: linear-gradient(45deg, #f35593 50%, #bf1616 50%);
+}
